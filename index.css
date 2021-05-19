@@ -1,12 +1,25 @@
 .red {
     background: #900;
+    grid-area: rd;
   }
   
   .green {
     background: #090;
+    grid-area: gr;
   }
   
   .blue {
     background: #009;
+    grid-area: bl;
   }
-  
+
+  .wrapper {
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-areas:
+    "rd bl"
+    "gr bl";
+    text-align: center;
+    font: 3em sans-serif;
+  }
